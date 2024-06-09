@@ -8,6 +8,7 @@ STATUS = ((0, 'Unavailable'), (1, 'Available'))
 
 
 class Item(models.Model):
+    """database table"""
     meal = models.CharField(max_length=1000, unique=True)
     description = models.CharField(max_length=2000)
     price = models.DecimalField(max_digits=10, decimal_places=2)
